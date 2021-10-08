@@ -21,12 +21,12 @@
 	@include font(700, 16px, 21px);
 	border-radius: 22px;
 
-	color: #d41443;
-	background: #ffffff;
+	color: var(--main-accent-color);
+	background: var(--main-text-color);
 
 	&:hover,
 	&:focus {
-		background-color: #ecebeb;
+		background-color: var(--btn-hover-color-second);
 	}
 }
 
@@ -40,12 +40,12 @@
 	@include font(700, 16px, 21px);
 	border-radius: 22px;
 
-	color: #d41443;
-	background: #ffffff;
+	color: var(--main-accent-color);
+	background: var(--main-text-color);
 
 	&:hover,
 	&:focus {
-		background-color: #ecebeb;
+		background-color: var(--btn-hover-color-second);
 	}
 }
 
@@ -59,12 +59,12 @@
 	@include font(400, 14px, 18px);
 	border-radius: 20px;
 
-	color: #ffffff;
-	background: #d41443;
+	color: var(--main-text-color);
+	background: var(--main-accent-color);
 
 	&:hover,
 	&:focus {
-		background-color: #c7133e;
+		background-color: var(--btn-hover-color-first);
 	}
 }
 
@@ -78,24 +78,29 @@
 	@include font(400, 14px, 18px);
 	border-radius: 20px;
 
-	color: #d41443;
-	background: #ffffff;
+	color: var(--main-accent-color);
+	background: var(--main-text-color);
 
 	&:hover,
 	&:focus {
-		background-color: #ecebeb;
+		background-color: var(--btn-hover-color-second);
 	}
 }
 
-.advantages__button {
+.about__button {
 	width: 176px;
 	height: 44px;
 
 	@include font(700, 16px, 21px);
 	border-radius: 22px;
 
-	color: #d41443;
-	background: #ffffff;
+	color: var(--main-accent-color);
+	background: var(--main-text-color);
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color-second);
+	}
 }
 
 .contacts__button--red {
@@ -111,8 +116,13 @@
 	@include font(700, 16px, 21px);
 	border-radius: 22px;
 
-	color: #ffffff;
-	background: #d41342;
+	color: var(--main-text-color);
+	background: var(--main-accent-color);
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color-first);
+	}
 }
 
 .contacts__button--white {
@@ -128,16 +138,11 @@
 	@include font(700, 16px, 21px);
 	border-radius: 22px;
 
-	color: #d41443;
-	background: #ecebeb;
+	color: var(--main-accent-color);
+	background: var(--btn-hover-color-second);
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color-second);
+	}
 }
-
-// Шрифты можно прописать в миксине, а потом просто подставлять значения. По-моему так быстрее
-// Только letter-spacing кое-где нужно пожставлять другой
-
-// @mixin font($fw, $fs, $lh, $ls: 0.04em) {
-// 	font-weight: $fw;
-// 	font-size: $fs;
-// 	line-height: $lh / $fs;
-// 	letter-spacing: $ls;
-// }
