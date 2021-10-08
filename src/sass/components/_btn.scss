@@ -1,1 +1,143 @@
 /* BTN */
+.button {
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	display: block;
+	margin: 0 auto;
+
+	text-align: center;
+
+	border: none;
+	cursor: pointer;
+}
+
+.header__button {
+	width: 209px;
+	height: 44px;
+	@media screen and (min-width: 768px) {
+		width: 160px;
+	}
+
+	@include font(700, 16px, 21px);
+	border-radius: 22px;
+
+	color: #d41443;
+	background: #ffffff;
+
+	&:hover,
+	&:focus {
+		background-color: #ecebeb;
+	}
+}
+
+.header__button--menu {
+	width: 209px;
+	height: 44px;
+	@media screen and (min-width: 768px) {
+		width: 186px;
+	}
+
+	@include font(700, 16px, 21px);
+	border-radius: 22px;
+
+	color: #d41443;
+	background: #ffffff;
+
+	&:hover,
+	&:focus {
+		background-color: #ecebeb;
+	}
+}
+
+.hero__button--red {
+	width: 61px;
+	height: 24px;
+	@media screen and (min-width: 1280px) {
+		width: 104px;
+	}
+
+	@include font(400, 14px, 18px);
+	border-radius: 20px;
+
+	color: #ffffff;
+	background: #d41443;
+
+	&:hover,
+	&:focus {
+		background-color: #c7133e;
+	}
+}
+
+.hero__button--white {
+	width: 83px;
+	height: 24px;
+	@media screen and (min-width: 1280px) {
+		width: 138px;
+	}
+
+	@include font(400, 14px, 18px);
+	border-radius: 20px;
+
+	color: #d41443;
+	background: #ffffff;
+
+	&:hover,
+	&:focus {
+		background-color: #ecebeb;
+	}
+}
+
+.advantages__button {
+	width: 176px;
+	height: 44px;
+
+	@include font(700, 16px, 21px);
+	border-radius: 22px;
+
+	color: #d41443;
+	background: #ffffff;
+}
+
+.contacts__button--red {
+	width: 161px;
+	height: 44px;
+	@media screen and (min-width: 768px) {
+		width: 191px;
+	}
+	@media screen and (min-width: 1280px) {
+		width: 198px;
+	}
+
+	@include font(700, 16px, 21px);
+	border-radius: 22px;
+
+	color: #ffffff;
+	background: #d41342;
+}
+
+.contacts__button--white {
+	width: 161px;
+	height: 44px;
+	@media screen and (min-width: 768px) {
+		width: 174px;
+	}
+	@media screen and (min-width: 1280px) {
+		width: 180px;
+	}
+
+	@include font(700, 16px, 21px);
+	border-radius: 22px;
+
+	color: #d41443;
+	background: #ecebeb;
+}
+
+// Шрифты можно прописать в миксине, а потом просто подставлять значения. По-моему так быстрее
+// Только letter-spacing кое-где нужно пожставлять другой
+
+// @mixin font($fw, $fs, $lh, $ls: 0.04em) {
+// 	font-weight: $fw;
+// 	font-size: $fs;
+// 	line-height: $lh / $fs;
+// 	letter-spacing: $ls;
+// }
