@@ -2,3 +2,20 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+
+/* RESET AND BASE STYLES */
+@import './base/reset';
+@import './base/container';
+@import './base/section';
+
+/* LAYOUT STYLES */
+@import './layout/hero-header';
+
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+
+@import './layout/footer';
