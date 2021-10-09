@@ -1,7 +1,6 @@
 /* CUSTOMER-REVIEWS */
 
 
-// custom-reviews
 
 .customer-reviews{
    display: flex;
@@ -13,8 +12,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   //max-width: 926px;
-   
 }
 
 .customer-reviews__img{
@@ -33,17 +30,11 @@
 }
 
 .customer-reviews__content{
-   background-color: #FAFAFA;
    display: block;
-   font-family: DM Sans;
    @media screen and (max-width: 767px){
    max-width: 280px;
    min-height: 308px;
-   font-size: 12px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 2.58;
-   letter-spacing: 0em;
+   @include font(500, 12, 30, 0.0);
    padding-top: 68px;
    padding-bottom: 26px; 
    padding-left: 66px;
@@ -53,11 +44,7 @@
    @media screen and (min-width: 768px) and (max-width: 1199px){
       width: 620px;
       min-height: 164px;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.87;
-      letter-spacing: 0.04em;
+      @include font(500, 16, 30, 0.04);
       padding-top: 47px;
       padding-bottom: 34px; 
       padding-left: 80px;
@@ -67,11 +54,7 @@
    @media screen and (min-width: 1200px){
    width: 926px;
    min-height: 138px;
-   font-size: 16px;
-   font-style:normal;
-   font-weight: 500;
-   line-height:1.87;
-   letter-spacing: 0.04em;
+   @include font(500, 16, 30, 0.04);
    padding-top: 47px;
    padding-bottom: 34px; 
    padding-left: 80px;
@@ -79,14 +62,40 @@
    margin-bottom: 34px;
    }
    text-align: center;
+   background-color: #FAFAFA;
    color: #000;
    position: relative;
-}
 
-// псевдоэлемент три точки
+   // псевдоэлемент кавычки
 
-.customer-reviews__content::after{
-   content: '•••';
+   &::before{
+      display: block;
+      content: " " ;
+      width: 54px;
+      height: 40px;
+      background-image: url("../images/customer-reviews/costumer-reviews-quote-1x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      @media screen and (max-width: 767px){
+         left: 55px;
+         top: 20px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+         left: 70px;
+         top: 23px;
+      }
+      @media screen and (min-width: 1200px){
+      left: 60px;
+      top: 25px;
+      }  
+   }
+
+   // псевдоэлемент три точки
+
+   &::after{
+      content: '•••';
    position: absolute;
    transform: translate(-50%, -50%);
    font-size: 15px; 
@@ -103,13 +112,13 @@
       top: 110%;
       left: 51%;
    }
-   color: #C7133E;
+   color: var(--btn-hover-color-first);
+   }
 }
 
 // подчеркивание в ввиде градиента (repeating-linear-gradients)
 
 .customer-reviews__slide{
-   color: #000;
    @media screen and (max-width: 767px){
       transform: scale(1.2, 1.3);
       padding-left: 10px;
@@ -124,67 +133,27 @@
       padding-right: 18px;
    }
    @media screen and (min-width: 1200px){
-      width: 750px; 
+      width: 780px; 
    }
    margin: 0 auto;
    line-height: 20px;
    background-image: 
    repeating-linear-gradient(180deg, transparent, transparent 18px, #E1E1E1 20px);
-}
-
-// псевдоэлемент кавычки
-
-.customer-reviews__content::before{
-   display: block;
-   content: " " ;
-   width: 54px;
-   height: 40px;
-   background-image: url("../images/customer-reviews/costumer-reviews-quote-1x.png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: absolute;
-   @media screen and (max-width: 767px){
-      left: 60px;
-      top: 25px;
-   }
-   @media screen and (min-width: 768px) and (max-width: 1199px){
-      left: 70px;
-      top: 23px;
-   }
-   @media screen and (min-width: 1200px){
-   left: 60px;
-   top: 25px;
-   }
+   color: #000;
 }
 
 .customer-reviews__name{
    @media screen and (max-width: 767px){
-   font-family: DM Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.86;
-letter-spacing: 0em;
+@include font(500, 20, 26, 0.0);
 text-align: center;
 margin-bottom: 30px;
    }
    @media screen and (min-width: 768px){
-      font-family: DM Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height:1.87;
-letter-spacing: 0em;
+@include font(500, 20, 37, 0.0);
 margin-bottom: 35px;
    }
-   @media screen and (min-width: 1200px){
-         font-family: DM Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.85;
-letter-spacing: 0em;
+   @media screen and (min-width: 1200px){   
+@include font(500, 20, 37, 0.0);
 margin-bottom: 35px;
    }
 color: #000;
