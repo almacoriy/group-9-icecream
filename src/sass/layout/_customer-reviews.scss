@@ -9,22 +9,12 @@
    align-items: center;
 }
 
-.customer-reviews__title{
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   clip: rect(0 0 0 0);
-   overflow: hidden;
-}
-
 .customer-reviews__wrapper{
    display: flex;
    flex-direction: column;
    align-items: center;
-   max-width: 926px;
+   //max-width: 926px;
+   
 }
 
 .customer-reviews__img{
