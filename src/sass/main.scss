@@ -4,29 +4,29 @@
  */
 
 /* RESET AND BASE STYLES */
-@import './base/reset';
-@import './base/container';
-@import './base/section';
+@import "./base/reset";
+@import "./base/container";
+@import "./base/section";
 
 /* UTILS */
-@import './utils/variables';
-@import './utils/mixins';
-@import './utils/font-mixin';
-@import './utils/visually-hidden';
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/font-mixin";
+@import "./utils/visually-hidden";
 
 /* COMPONENTS */
-@import './components/btn';
-@import './components/label';
-@import './components/title';
+@import "./components/btn";
+@import "./components/label";
+@import "./components/title";
 
 /* LAYOUT STYLES */
-@import './layout/hero-header';
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/products";
+@import "./layout/about";
+@import "./layout/advantages";
+@import "./layout/gallery";
+@import "./layout/customer-reviews";
+@import "./layout/contacts";
 
-@import './layout/products';
-@import './layout/about';
-@import './layout/advantages';
-@import './layout/gallery';
-@import './layout/customer-reviews';
-@import './layout/contacts';
-
-@import './layout/footer';
+@import "./layout/footer";
