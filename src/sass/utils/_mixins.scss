@@ -1,6 +1,6 @@
 /* MIXINS */
 
-// Только letter-spacing кое-где нужно пожставлять другой
+// Только letter-spacing кое-где нужно подставлять другой
 @mixin font($fw, $fs, $lh, $ls: 0.04em) {
   font-weight: $fw;
   font-size: $fs;
