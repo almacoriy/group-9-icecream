@@ -1,1 +1,59 @@
 /* ABOUT */
+.section.about {
+  background-color: #fff5f6;
+  background-image: url(../images/about/mobile/about-bg-mobile-1x.png);
+  background-position: 50% 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/mobile/about-bg-mobile-2x.png);
+    background-position: 50% 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+  }
+}
+
+.about__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about__label {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main-about__list {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.main-about__item {
+  margin-bottom: 20px;
+}
+
+.main-about__item:first-child {
+  margin-bottom: 30px;
+}
+
+.main-about__text--first {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #000;
+}
+
+.main-about__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+}
+
+.arrow {
+  margin-left: 14px;
+}
