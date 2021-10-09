@@ -1,0 +1,17 @@
+/* LABEL */
+.label {
+  font-family: var(--accent-font-family);
+
+  @include font(400, 18, 21);
+
+  text-transform: uppercase;
+  color: var(--secondary-accent-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 26, 30);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30, 34);
+  }
+}
