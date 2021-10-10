@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/about/mobile/about-bg-mobile-1x.png":[["about-bg-mobile-1x.9c7456e1.png","yn7l"],"yn7l"],"./../images/about/mobile/about-bg-mobile-2x.png":[["about-bg-mobile-2x.604427cd.png","bibV"],"bibV"],"./../images/about/desktop/about-bg-desktop-1x.png":[["about-bg-desktop-1x.4e673c44.png","x4p0"],"x4p0"],"./../images/about/desktop/about-bg-desktop-2x.png":[["about-bg-desktop-2x.50cae091.png","KnXR"],"KnXR"],"./../images/customer-reviews/costumer-reviews-quote-1x.png":[["costumer-reviews-quote-1x.21e30b87.png","cP2M"],"cP2M"],"./../images/contacts/contacts-bg-desktop-1x.png":[["contacts-bg-desktop-1x.7e12ea28.png","iKnm"],"iKnm"],"./../images/contacts/contacts-bg-desktop-2x.png":[["contacts-bg-desktop-2x.936d7ca8.png","SlRh"],"SlRh"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/group-9-icecream/src.5337a2aa.js.map
+//# sourceMappingURL=/group-9-icecream/src.5e3409c3.js.map
