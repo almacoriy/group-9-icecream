@@ -90,9 +90,12 @@
 .about__btn {
   width: 176px;
   height: 44px;
+  padding: 0;
+  margin: 0;
 
   @include font(700, 16, 21);
   border-radius: 22px;
+  border: none;
 
   color: var(--main-accent-color);
   background: var(--main-text-color);
