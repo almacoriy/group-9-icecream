@@ -2,16 +2,18 @@
 
 
 
-.customer-reviews{
+.customer-reviews__container{
    display: flex;
    flex-direction: column;
    align-items: center;
-}
+   }
+
 
 .customer-reviews__wrapper{
    display: flex;
    flex-direction: column;
    align-items: center;
+   max-width: 926px;
 }
 
 .customer-reviews__img{
@@ -79,8 +81,8 @@
       background-repeat: no-repeat;
       position: absolute;
       @media screen and (max-width: 767px){
-         left: 55px;
-         top: 20px;
+         left: 60px;
+         top: 25px;
       }
       @media screen and (min-width: 768px) and (max-width: 1199px){
          left: 70px;
@@ -102,7 +104,7 @@
    letter-spacing: 8px;
    @media screen and (max-width: 767px){
    top: 110%;
-   left: 51%;
+   left: 51.5%;
    }
    @media screen and (min-width: 768px){
    top: 115%;
@@ -110,7 +112,7 @@
    }
    @media screen and (min-width: 1200px){
       top: 110%;
-      left: 51%;
+      left: 50.5%;
    }
    color: var(--btn-hover-color-first);
    }
@@ -146,29 +148,109 @@
    @media screen and (max-width: 767px){
 @include font(500, 20, 26, 0.0);
 text-align: center;
-margin-bottom: 30px;
    }
    @media screen and (min-width: 768px){
 @include font(500, 20, 37, 0.0);
-margin-bottom: 35px;
    }
    @media screen and (min-width: 1200px){   
 @include font(500, 20, 37, 0.0);
-margin-bottom: 35px;
    }
 color: #000;
 }
 
-.customer-reviews__icon{
+// Слайдер отзывов
+// последовательность обязательна
+#reviews__slides{
+   position: relative;
+   @media screen and (max-width: 768px){
+   height: 500px;
+   }
+}
+
+.reviews__slide{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   z-index: 1;
+   visibility: hidden;
+   -webkit-transition: opacity 1s;
+   -moz-transition: opacity 1s;
+   -o-transition: opacity 1s;
+   transition: opacity 1s;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.showing{
+   position: absolute;
+   opacity: 1;
+   z-index: 2;
+   visibility: visible;
+   width: 100%;
+   height: 100%;
+   clip: inherit;
+}
+
+#reviews__buttons{
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   z-index: 10;
+   font-size: 0px;
    display: flex;
    justify-content: space-between;
    width: 73px;
+   @media screen and (max-width: 767px){
+      margin-top: 30px; 
+   }
+   @media screen and (min-width: 768px){
+   margin-top: 35px;
+   }
+   @media screen and (min-width: 1200px){
+   margin-top: 35px;
+}
 }
 
-.customer-icon__ellipse{
-   width: 12px;
-   height: 12px;
-   border-radius: 50%;
-   background-color: #D9D9D9;
+// не переставлять
+.reviews__slide{
+   position: relative;
+}
+
+// свойства кнопок реализованных скриптом
+.reviews__button{
+width: 15px;
+height: 15px;
+border-radius: 50%; 
+background-color: #D9D9D9;
+}
+
+.reviews__button.reviews__button-active{
+   background-color: rgb(211, 19, 66);
+}
+
+.reviews__button-home{
+   background-image: url(../images/customer-reviews/costumer-reviews-house-1x.png);
+   background-color: white;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   filter: grayscale(1);
+   width: 17px;
+   height: 17px; 
+   background-repeat: no-repeat;
+   opacity: 0.3;
+}
+
+.reviews__button-home.reviews__button-active{
+   filter: unset;
+   opacity: 1;
 }
 
