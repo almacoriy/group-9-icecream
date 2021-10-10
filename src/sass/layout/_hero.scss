@@ -1,61 +1,269 @@
 /* HERO */
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
+}
+
 .hero {
 	position: relative;
+	padding-top: 193px;
+	padding-bottom: 160px;
+
+	background-image: radial-gradient(circle closest-side at top 50% left 66%, #ffa5ba 160%, transparent 161%);
+
+	@media screen and (min-width: 768px) {
+		padding-top: 94px;
+		padding-bottom: 34px;
+		background-image: radial-gradient(circle closest-side at top 50% right 40%, #ffa5ba 90%, transparent 50%);
+	}
+	@media screen and (min-width: 1280px) {
+		padding-top: 156px;
+		padding-bottom: 56px;
+
+		background-image: radial-gradient(circle closest-side at top 50% right 44%, #ffa5ba 88%, transparent 50%);
+	}
+
 	background-color: var(--main-background-color);
 }
 
+.hero__container {
+	position: static;
+}
+
 .hero__content {
+	position: relative;
+	z-index: 2;
+
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .hero__label {
-	max-width: 218px;
 	margin-bottom: 35px;
 
 	font-family: "Titan One", sans-serif;
 	@include font(400, 26, 30);
 	text-transform: uppercase;
 	color: var(--main-text-color);
+
+	@media screen and (min-width: 768px) {
+		@include font(400, 22, 25);
+	}
+	@media screen and (min-width: 1280px) {
+		@include font(400, 38, 44);
+	}
 }
 
 .hero__title {
-	font-family: "Titan One", sans-serif;
+	font-family: var(--accent-font-family);
 	font-size: 48px;
 	line-height: 46px;
-	// @include font(400, 48, 46);
+	color: var(--main-accent-color);
+	text-transform: uppercase;
+
+	@media screen and (min-width: 768px) {
+		font-size: 34px;
+		line-height: 31px;
+	}
+	@media screen and (min-width: 1280px) {
+		font-size: 58px;
+		line-height: 52px;
+	}
 }
 
+// Progress
+.hero__progress {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.hero__progress-number {
+	position: absolute;
+	flex-direction: column;
+	width: 100%;
+
+	font-family: "Titan One", sans-serif;
+	@include font(400, 28, 32);
+	color: var(--main-accent-color);
+
+	@media screen and (min-width: 1280px) {
+		@include font(400, 46, 53);
+	}
+}
+
+.hero__progress-number--bottom {
+	display: flex;
+	align-items: center;
+}
+
+.hero__progress-list {
+	position: relative;
+
+	@media screen and (min-width: 768px) {
+		background-image: radial-gradient(circle at top 8px right 8px, var(--main-text-color) 8px, transparent 8px);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	@media screen and (min-width: 1280px) {
+		background-image: radial-gradient(circle at top 15px right 15px, var(--main-text-color) 15px, transparent 15px);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.hero__progress-list--top {
+	width: 43px;
+	height: 44px;
+
+	@media screen and (min-width: 1280px) {
+		width: 72px;
+		height: 77px;
+	}
+}
+
+.hero__progress-list--bottom {
+	width: 51px;
+	height: 43px;
+
+	@media screen and (min-width: 1280px) {
+		width: 92px;
+		height: 76px;
+	}
+}
+
+.hero__progress-text {
+	display: flex;
+	font-family: "DM Sans", sans-serif;
+	@include font(400, 8, 10);
+	color: var(--main-text-color);
+
+	@media screen and (min-width: 1280px) {
+		@include font(400, 14, 18);
+	}
+}
+
+.hero__progress-text--top {
+	display: flex;
+	justify-content: center;
+}
+
+.hero__progress-text--bottom {
+	display: flex;
+	align-items: flex-start;
+}
+
+// Button
 .hero__button {
-	@include flex-center();
+	position: absolute;
+	z-index: 2;
+	display: flex;
 }
 
-.btn {
+.hero__btn--red {
 	margin-right: 8px;
 }
 
-.hero__img {
-	width: 171px;
-	// position: relative;
+.hero__link--red {
+	color: var(--main-text-color);
 }
 
+.hero__link--white {
+	color: var(--main-accent-color);
+}
+
+// Hero about
+.hero__about {
+	width: 114px;
+	margin-top: 66px;
+	margin-right: 0;
+	margin-left: 120px;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 1280px) {
+		width: 200px;
+		margin-top: 112px;
+		margin-left: 180px;
+	}
+}
+
+.hero__about-text {
+	margin-right: 0;
+	@media screen and (min-width: 768px) {
+		margin-bottom: 7px;
+		@include font(400, 8, 12);
+	}
+	@media screen and (min-width: 1280px) {
+		margin-bottom: 20px;
+		@include font(400, 14, 20);
+	}
+}
+
+.hero__about-img {
+	width: 18px;
+	height: 18px;
+
+	@media screen and (min-width: 1280px) {
+		width: 26px;
+		height: 26px;
+	}
+}
+
+// Images
 .hero__img--icecream {
 	position: absolute;
+	z-index: 0;
 	bottom: 0;
-	right: 32px;
+	right: 8%;
+	width: auto;
 
-	// background-color: #ffa5ba;
-	// border-radius: 50%;
-	// &::after {
-	// 	content: "";
-	// 	position: absolute;
-	// 	top: 50%;
-	// 	left: 50%;
-	// 	transform: translate(-50%, -50%);
-	// 	width: 345px;
+	@media screen and (min-width: 768px) {
+		bottom: 0;
+		right: 37%;
+	}
+	@media screen and (min-width: 1280px) {
+		bottom: 0;
+		right: 37%;
+	}
+}
 
-	// 	background-color: red;
-	// 	border-radius: 50%;
-	// }
+.hero__img--milk {
+	position: absolute;
+	z-index: 0;
+	bottom: 28px;
+	left: 0;
+	width: auto;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	@media screen and (min-width: 1280px) {
+		bottom: 45px;
+		left: 0;
+	}
+}
+
+.hero__img--girl {
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	right: 34px;
+	width: auto;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	@media screen and (min-width: 1280px) {
+		bottom: 0;
+		right: 113px;
+	}
 }

@@ -52,12 +52,15 @@
 .hero__btn--red {
   width: 61px;
   height: 24px;
+
+  @include font(400, 8, 10);
+  border-radius: 20px;
+
   @media screen and (min-width: 1280px) {
     width: 104px;
+    height: 40px;
+    @include font(400, 14, 18);
   }
-
-  @include font(400, 14, 18);
-  border-radius: 20px;
 
   color: var(--main-text-color);
   background: var(--main-accent-color);
@@ -75,8 +78,14 @@
     width: 138px;
   }
 
-  @include font(400, 14, 18);
+  @include font(400, 8, 10);
   border-radius: 20px;
+
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    height: 40px;
+    @include font(400, 14, 18);
+  }
 
   color: var(--main-accent-color);
   background: var(--main-text-color);
