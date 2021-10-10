@@ -36,6 +36,8 @@
 }
 
 .contacts-list__item {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   background: var(--main-text-color);
@@ -63,6 +65,7 @@
 
 .contacts-list__category {
   display: inline-block;
+  align-self: flex-start;
   align-items: center;
   margin-bottom: 25px;
   padding-left: 15px;
@@ -101,7 +104,8 @@
 }
 
 .contacts-list__text {
-  display: block;
+  display: flex;
+  flex: 1 1 auto;
   position: relative;
   font-family: var(--main-font-family);
   @include font(500, 12, 18);
@@ -220,4 +224,96 @@
 
 .contacts-address {
   margin-bottom: 0;
+}
+
+// MODAL
+
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  transition: opacity 250ms, visibility 250ms;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+  min-height: 300px;
+  background-color: #ffb8ca;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  @media screen and (min-width: 480px) {
+    min-width: 470px;
+    min-height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 700px;
+    min-height: 500px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1000px;
+    min-height: 700px;
+  }
+}
+
+.info {
+  margin-top: 20px;
+  text-align: center;
+  font-family: var(--accent-font-family);
+  @include font(500, 20, 25);
+  color: var(--main-accent-color);
+  @media screen and (min-width: 480px) {
+    @include font(500, 30, 35);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(500, 45, 50);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 58, 66);
+  }
+}
+
+.button-open {
+  font-family: var(--accent-font-family);
+  @include font(500, 10, 12);
+  color: var(--main-accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid var(--main-accent-color);
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #c2e297;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 480px) {
+    width: 25px;
+    height: 25px;
+    @include font(500, 15, 18);
+  }
+  @media screen and (min-width: 768px) {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--main-accent-color);
+    @include font(500, 17, 20);
+  }
 }

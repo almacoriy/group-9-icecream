@@ -5,7 +5,7 @@
       <li class="contacts-list__item">
         <p class="contacts-list__category">CAFE</p>
         <p class="contacts-list__city">Chicago</p>
-        <p class="contacts-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <p class="contacts-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
         <ul class="contacts-shedule list">
           <li class="contacts-shedule__item">
             <p class="contacts-shedule__days">Monday - Friday</p>
@@ -76,8 +76,20 @@
     </ul>
 
     <div class="contacts-button">
-      <button type="button" class="contacts__btn--red btn">Our Locations ></button>
-      <button type="button" class="contacts__btn--white btn">Franchise ></button>
+      <button type="button" class="contacts__btn--red btn" data-modal-open>Our Locations ></button>
+      <button type="button" class="contacts__btn--white btn" data-modal-open>Franchise ></button>
     </div>
   </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+      <button type="button" class="button-open" data-modal-close>X
+      </button>
+      <form class="form-info">
+      <p class="info">Our locations</p>
+
+              </form>
+  </div>
+</div>
+<script src="../modal.js"></script>
