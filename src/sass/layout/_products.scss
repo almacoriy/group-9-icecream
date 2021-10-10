@@ -1,4 +1,5 @@
 /* PRODUCTS */
+<<<<<<< Updated upstream
 .product-section {
   background: #e5e5e5;
 }
@@ -8,6 +9,21 @@
 
     margin-right: -20px;
     margin-top: -20px;
+=======
+/* PRODUCTS */
+// .product-section {
+//   background: #e5e5e5;
+// }
+.products__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 145px;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    margin-top: 150px;
+    flex-direction: row;
+>>>>>>> Stashed changes
   }
   @media screen and (min-width: 1280px) {
     display: flex;
