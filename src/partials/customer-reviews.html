@@ -1,27 +1,66 @@
-<!-- Customer Reviews.html -->
+<!-- Customer Reviews.html с слайдером на js -->
 <section class="customer-reviews section">
+
+  <!-- скрытый заголовок -->
+  <h2 class="customer-reviews__title visually-hidden">Customer Reviews</h2>
+
   <div class="customer-reviews__container container">
-    <!-- скрытый заголовок -->
-    <h2 class="customer-reviews__title visually-hidden">Customer Reviews</h2>
-    <div class="customer-reviews__wrapper">
-      <img class="customer-reviews__img" srcset="
-        ./images/customer-reviews/costumer-reviews-costumer1-1x.png 1x,
-        ./images/customer-reviews/costumer-reviews-costumer1-2x.png 2x
-      " src="./images/customer-reviews/costumer-reviews-costumer1-1x.png" alt="personal photo" width="85" height="85">
-      <div class="customer-reviews__content">
-        <div class="customer-reviews__slide">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+    <ul class="reviews__slides list" id="reviews__slides">
+      <li class="reviews__slide  showing">
+        <div class="customer-reviews__wrapper">
+          <img class="customer-reviews__img" srcset="
+            ./images/customer-reviews/costumer-reviews-costumer1-1x.png 1x,
+            ./images/customer-reviews/costumer-reviews-costumer1-2x.png 2x"
+            src="./images/customer-reviews/costumer-reviews-costumer1-1x.png" alt="personal photo" width="85"
+            height="85">
+          <div class="customer-reviews__content">
+            <div class="customer-reviews__slide">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </div>
+          </div>
+          <p class="customer-reviews__name">Emily, Los Angeles</p>
         </div>
-      </div>
-      <p class="customer-reviews__name">Emily, Los Angeles</p>
-      <ul class="customer-reviews__icon">
-        <li class="customer-icon__home">
-          <img src="./images/customer-reviews/costumer-reviews-house-1x.png" alt="">
-        </li>
-        <li class="customer-icon__ellipse"></li>
-        <li class="customer-icon__ellipse"></li>
-      </ul>
-    </div>
+      </li>
+      <li class="reviews__slide">
+        <div class="customer-reviews__wrapper">
+          <img class="customer-reviews__img" srcset="
+            ./images/customer-reviews/costumer-reviews-costumer2-1x.png 1x,
+            ./images/customer-reviews/costumer-reviews-costumer2-2x.png 2x"
+            src="./images/customer-reviews/costumer-reviews-costumer2-1x.png" alt="personal photo" width="85"
+            height="85">
+          <div class="customer-reviews__content">
+            <div class="customer-reviews__slide">
+              In hendrerit nulla quam
+              nunc, accumsan congue.
+              Lorem ipsum primis in nibh vel risus.
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem.
+            </div>
+          </div>
+          <p class="customer-reviews__name">Bella, Wellington</p>
+        </div>
+      </li>
+      <li class="reviews__slide">
+        <div class="customer-reviews__wrapper">
+          <img class="customer-reviews__img" srcset="
+            ./images/customer-reviews/costumer-reviews-costumer3-1x.png 1x,
+            ./images/customer-reviews/costumer-reviews-costumer3-2x.png 2x"
+            src="./images/customer-reviews/costumer-reviews-costumer3-1x.png" alt="personal photo" width="85"
+            height="85">
+          <div class="customer-reviews__content">
+            <div class="customer-reviews__slide">
+              Quisque cursus et, porttitor risus.
+              Nullam viverra consectetuer.
+              Aliquam sem. In hendrerit nulla quam
+              nunc,
+              accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </div>
+          </div>
+          <p class="customer-reviews__name">Cathy, New York</p>
+        </div>
+      </li>
+    </ul>
+    <div id="reviews__buttons"></div>
   </div>
 </section>
