@@ -221,11 +221,11 @@
     margin: 0;
   }
 }
-.contacts-content__map{
+.contacts-content__map {
   display: flex;
   height: 100%;
   width: 100%;
-  z-index: 101;
+  z-index: 3;
   position: absolute !important;
 }
 .contacts-address {
@@ -241,7 +241,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   transition: opacity 250ms, visibility 250ms;
-  z-index: 100;
+  z-index: 2;
   &.is-hidden {
     opacity: 0;
     visibility: hidden;

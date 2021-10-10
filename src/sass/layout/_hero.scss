@@ -33,7 +33,7 @@
 
 .hero__content {
 	position: relative;
-	z-index: 2;
+	// z-index: 2;
 
 	display: flex;
 	justify-content: space-between;
@@ -162,7 +162,7 @@
 // Button
 .hero__button {
 	position: absolute;
-	z-index: 2;
+	// z-index: 2;
 	display: flex;
 }
 
@@ -221,7 +221,7 @@
 // Images
 .hero__img--icecream {
 	position: absolute;
-	z-index: 0;
+	// z-index: 0;
 	bottom: 0;
 	right: 8%;
 	width: auto;
@@ -238,7 +238,7 @@
 
 .hero__img--milk {
 	position: absolute;
-	z-index: 0;
+	// z-index: 0;
 	bottom: 28px;
 	left: 0;
 	width: auto;
@@ -254,7 +254,7 @@
 
 .hero__img--girl {
 	position: absolute;
-	z-index: 0;
+	// z-index: 0;
 	bottom: 0;
 	right: 34px;
 	width: auto;
