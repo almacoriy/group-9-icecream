@@ -173,8 +173,11 @@
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
+  transform: translateY(50%);
+  position: relative;
   bottom: 30px;
   margin: 0 auto;
+
   &::before,
   &::after {
     content: '';
@@ -217,15 +220,5 @@
   display: block;
   width: 42px;
   height: 40px;
-  margin: 0 auto;
-}
-
-.btn-discription {
-  width: 40px;
-  height: 40px;
-  border: transparent;
-  background-color: #ffff;
-  border-radius: 50%;
-  display: block;
   margin: 0 auto;
 }
