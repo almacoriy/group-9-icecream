@@ -223,9 +223,12 @@
 }
 .contacts-content__map {
   display: flex;
-  height: 100%;
-  width: 100%;
-  z-index: 3;
+  height: 80%;
+  width: 80%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  z-index: 4;
   position: absolute !important;
 }
 .contacts-address {
