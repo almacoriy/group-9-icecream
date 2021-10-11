@@ -18,6 +18,7 @@
 
 .advantages__title {
   @include font(400, 36, 41);
+  text-transform: lowercase;
 
   @media screen and (min-width: 768px) {
     @include font(400, 48, 55);

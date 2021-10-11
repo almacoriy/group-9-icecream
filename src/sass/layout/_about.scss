@@ -1,1 +1,111 @@
 /* ABOUT */
+.section.about {
+  background-color: #fff5f6;
+  background-image: url(../images/about/mobile/about-bg-mobile-1x.png);
+  background-position: 50% 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/mobile/about-bg-mobile-2x.png);
+    background-position: 50% 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+  }
+}
+
+.about__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about__label {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.text-btn {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.main-about__item {
+  margin-bottom: 20px;
+}
+
+.main-about__item:first-child {
+  margin-bottom: 30px;
+}
+
+.main-about__text--first {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #000;
+}
+
+.main-about__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+}
+
+.arrow {
+  margin-left: 13.62px;
+}
+
+.arow__stile {
+  fill: var(--main-accent-color);
+}
+/*=====================768======================*/
+
+@media screen and (min-width: 768px) {
+  .section.about {
+    background-image: none;
+  }
+
+  .main-about {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-btn {
+    max-width: 340px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+  }
+}
+
+/*=====================1280======================*/
+
+@media screen and (min-width: 1280px) {
+  .section.about {
+    background-image: url(../images/about/desktop/about-bg-desktop-1x.png);
+    background-position: 50% 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/desktop/about-bg-desktop-2x.png);
+      background-position: 50% 80%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-bottom: 40px;
+    }
+  }
+  .main-about__text,
+  .main-about__text--first {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  .text-btn {
+    max-width: 463px;
+    margin-left: 75px;
+  }
+}

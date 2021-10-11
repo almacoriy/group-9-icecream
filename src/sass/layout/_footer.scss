@@ -1,1 +1,125 @@
 /* FOOTER */
+.footer {
+  background-color: var(--secondary-background-color);
+  padding-bottom: 25px;
+  display: flex;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 10px;
+  }
+}
+.footer-label {
+  margin-bottom: 17px;
+}
+.footer-title {
+  margin-bottom: 43px;
+  @media screen and (max-width: 479px) {
+    width: 200px;
+  }
+}
+.footer-list {
+  display: flex;
+  margin-bottom: 46px;
+  justify-content: end;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 36px;
+  }
+}
+.footer-list__item {
+  width: 32px;
+  height: 32px;
+}
+.footer-list__item:not(:last-child) {
+  margin-right: 28px;
+}
+.footer-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fea5bb;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--main-accent-color);
+  }
+}
+.footer-icon {
+  fill: white;
+  background-color: #fea5bb;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .footer-list__link:hover &,
+  .footer-list__link:focus & {
+    background-color: var(--main-accent-color);
+  }
+}
+.footer-text {
+  font-family: DM Sans;
+  color: #000000;
+
+  @include font(700, 12, 22, 0.03);
+  text-align: right;
+  margin-bottom: 65px;
+  @media screen and (min-width: 768px) {
+    @include font(700, 14, 26, 0.01);
+    position: absolute;
+    top: 80px;
+    right: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(700, 16, 29, 0.02);
+  }
+}
+
+.footer-contact {
+  font-family: DM Sans;
+  color: var(--main-accent-color);
+  @include font(500, 12, 22, 0.03);
+  text-align: right;
+}
+
+.footer-rights {
+  font-family: DM Sans;
+  @include font(700, 14, 21, 0.03);
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-top: 65px;
+  max-width: 150px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    @include font(700, 14, 26, 0.02);
+    max-width: 300px;
+  }
+}
+
+.footer-line::before {
+  content: '';
+  display: flex;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 65px;
+
+  @media screen and (min-width: 768px) {
+    bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 35px;
+  }
+}
+
+.left-side {
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 474px;
+  }
+}

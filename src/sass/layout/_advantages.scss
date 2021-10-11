@@ -1,1 +1,96 @@
 /* ADVENTAGES */
+.advantages-section {
+  background-color: #fff5f6;
+}
+.advantages-list {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+.advantages-item {
+  width: 100%;
+
+  .advantages-list &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    .advantages-list &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &::before {
+    display: block;
+    content: '';
+    height: 50px;
+    margin-bottom: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    // background-color: transparent;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   height: 100px;
+    // }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.icon-icecream1::before {
+  background-image: url(../images/advantages/mobile/advantages-icon1-mobile-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/mobile/advantages-icon1-mobile-2x.png);
+  }
+}
+
+.icon-icecream2::before {
+  background-image: url(../images/advantages/mobile/advantages-icon2-mobile-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/mobile/advantages-icon2-mobile-2x.png);
+  }
+}
+
+.icon-icecream3::before {
+  background-image: url(../images/advantages/mobile/advantages-icon3-mobile-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/mobile/advantages-icon3-mobile-2x.png);
+  }
+}
+
+.advantages-text {
+  font-family: var(--main-font-family);
+  color: #000000;
+  margin-top: -2px;
+  width: 230px;
+
+  @include font(700, 12, 20);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 13px;
+    width: 180px;
+    @include font(700, 14, 24);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 15px;
+    width: 330px;
+    @include font(700, 16, 28);
+  }
+}

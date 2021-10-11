@@ -1,39 +1,116 @@
 <section class="hero section">
   <div class="container">
-    <h1>ice cream made with passion</h1>
-    <ul class="list">
-      <li>
-        <a href="#" class="link">Products</a>
+    <div class="hero__content">
+      <h1 class="hero__label">
+        ice cream made with
+        <span class="hero__title">passion</span>
+      </h1>
+
+      <ul class="hero__progress">
+        <li class="hero__progress-list list">
+          <p class="hero__progress-number">16</p>
+          <p class="hero__progress-text">cafes</p>
+        </li>
+
+        <li class="hero__progress-list list">
+          <p class="hero__progress-number">23</p>
+          <p class="hero__progress-text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="hero__button list">
+      <li class="hero__button-item">
+        <button class="btn hero__btn--red" type="button">
+          <a href="#products" class="hero__link link">Products</a>
+        </button>
       </li>
-      <li>
-        <a href="#" class="link">How it’s made?</a>
+      <li class="hero__button-item">
+        <button class="btn hero__btn--white">
+          <a href="#about" class="hero__link link">How it’s made?</a>
+        </button>
       </li>
     </ul>
 
-    <div class="mobile-menu">
-      <button type="button">Buy now</button>
-      <ul class="list">
-        <li>
-          <a href="" class="link">Home</a>
-        </li>
-        <li>
-          <a href="" class="link">About us</a>
-        </li>
-        <li>
-          <a href="" class="link">How it’s made?</a>
-        </li>
-        <li>
-          <a href="" class="link">Our products</a>
-        </li>
-        <li>
-          <a href="" class="link">Contact</a>
-        </li>
-      </ul>
-      <button type="button">
-        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-          <use href="./images/icons.svg#icon-arrow-right"></use>
-        </svg>
-      </button>
+    <div class="hero__about">
+      <p class="hero__about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="hero__about-button" type="button"></button>
     </div>
+
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hero-header/desktop/hero-header-icecream-desktop-1x.png 1x,
+          ./images/hero-header/desktop/hero-header-icecream-desktop-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero-header/tablet/hero-header-icecream-tablet-1x.png 1x,
+          ./images/hero-header/tablet/hero-header-icecream-tablet-2x.png 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/hero-header/mobile/hero-header-icecream-mobile-1x.png 1x,
+          ./images/hero-header/mobile/hero-header-icecream-mobile-2x.png 2x
+        "
+      />
+      <img
+        class="hero__img--icecream"
+        src="./images/hero-header/mobile/hero-header-icecream-mobile-1x.png"
+        alt="Ice cream"
+      />
+    </picture>
+
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hero-header/desktop/hero-header-milk-desktop-1x.png 1x,
+          ./images/hero-header/desktop/hero-header-milk-desktop-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero-header/tablet/hero-header-milk-tablet-1x.png 1x,
+          ./images/hero-header/tablet/hero-header-milk-tablet-2x.png 2x
+        "
+      />
+      <img
+        class="hero__img--milk"
+        src="./images/hero-header/tablet/hero-header-milk-tablet-1x.png"
+        alt="Milk"
+      />
+    </picture>
+
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hero-header/desktop/hero-header-girl-desktop-1x.png 1x,
+          ./images/hero-header/desktop/hero-header-girl-desktop-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero-header/tablet/hero-header-girl-tablet-1x.png 1x,
+          ./images/hero-header/tablet/hero-header-girl-tablet-2x.png 2x
+        "
+      />
+      <img
+        class="hero__img--girl"
+        src="./images/hero-header/tablet/hero-header-girl-tablet-1x.png"
+        alt="Girl"
+      />
+    </picture>
   </div>
 </section>

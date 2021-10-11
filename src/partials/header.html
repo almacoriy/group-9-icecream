@@ -1,41 +1,70 @@
-<header>
-  <div class="container">
-    <nav>
-      <ul class="list">
-        <li>
-          <a href="./index.html" class="link">
-            <img
-              srcset="
-                ./images/hero-header/hero-header-logo-1x.png 1x,
-                ./images/hero-header/hero-header-logo-2x.png 2x
-              "
-              src="./images/hero-header/hero-header-logo-2x.png"
-              alt="logo"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="" class="link">Home</a>
-        </li>
-        <li>
-          <a href="" class="link">About us</a>
-        </li>
-        <li>
-          <a href="" class="link">How it’s made?</a>
-        </li>
-        <li>
-          <a href="" class="link">Our products</a>
-        </li>
-        <li>
-          <a href="" class="link">Contact</a>
-        </li>
-      </ul>
-      <button type="button">
+<header class="header">
+  <div class="header__cont container">
+    <nav class="header-nav">
+      <a href="./index.html" class="link">
+        <img
+          class="logo"
+          srcset="
+            ./images/hero-header/hero-header-logo-1x.png 1x,
+            ./images/hero-header/hero-header-logo-2x.png 2x
+          "
+          src="./images/hero-header/hero-header-logo-2x.png"
+          alt="logo"
+        />
+      </a>
+
+      <div class="header-nav__menu">
+        <ul class="header-nav__list list">
+          <li>
+            <a href="" class="link header-nav__text">Home</a>
+          </li>
+          <li>
+            <a href="" class="link header-nav__text">About us</a>
+          </li>
+          <li>
+            <a href="" class="link header-nav__text">How it’s made?</a>
+          </li>
+          <li>
+            <a href="" class="link header-nav__text">Our products</a>
+          </li>
+          <li>
+            <a href="" class="link header-nav__text">Contact</a>
+          </li>
+        </ul>
+        <button class="btn header__btn" type="button" data-modal-hero-open>Buy now</button>
+      </div>
+
+      <button class="btn header__btn--open js-open-menu" type="button">
         <svg width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 1h20M0 7h20M0 13h20" stroke="#D41443" />
         </svg>
       </button>
-      <button type="button">Buy now</button>
     </nav>
+  </div>
+
+  <div class="mobile-menu js-menu-container">
+    <button class="mob-menu__btn btn header__btn" type="button">Buy now</button>
+    <ul class="list">
+      <li class="mob-menu__list">
+        <a class="mob-menu__text" href="" class="link">Home</a>
+      </li>
+      <li class="mob-menu__list">
+        <a class="mob-menu__text" href="" class="link">About us</a>
+      </li>
+      <li class="mob-menu__list">
+        <a class="mob-menu__text" href="" class="link">How it’s made?</a>
+      </li>
+      <li class="mob-menu__list">
+        <a class="mob-menu__text" href="" class="link">Our products</a>
+      </li>
+      <li class="mob-menu__list">
+        <a class="mob-menu__text" href="" class="link">Contact</a>
+      </li>
+    </ul>
+    <button class="btn header__btn--close js-close-menu" type="button">
+      <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="m1.26 1 13.48 14M1 14.74 15 1.26" stroke="#fff" />
+      </svg>
+    </button>
   </div>
 </header>
