@@ -1,28 +1,28 @@
 /* HERO */
 .hero {
 	background-color: var(--main-background-color);
-	padding-top: 193px;
+	padding-top: 110px;
 	padding-bottom: 160px;
 	// background-image: radial-gradient(circle closest-side at top 50% left 66%, #ffa5ba 160%, transparent 161%);
-	background-image: radial-gradient(circle at bottom 247px right 110px, #ffa5ba 172px, transparent 172px);
+	// background-image: radial-gradient(circle at bottom 247px right 110px, #ffa5ba 172px, transparent 172px);
 
 	@media screen and (min-width: 768px) {
-		padding-top: 94px;
+		padding-top: 4px;
 		padding-bottom: 34px;
 		// background-image: radial-gradient(circle closest-side at top 50% right 40%, #ffa5ba 90%, transparent 50%);
-		background-image: radial-gradient(circle at bottom 207px right 264px, #ffa5ba 161px, transparent 161px);
+		// background-image: radial-gradient(circle at bottom 207px right 264px, #ffa5ba 161px, transparent 161px);
 	}
 	@media screen and (min-width: 1280px) {
-		padding-top: 156px;
 		padding-bottom: 56px;
+		padding-top: 70px;
 		// background-image: radial-gradient(circle closest-side at top 50% right 44%, #ffa5ba 88%, transparent 50%);
-		background-image: radial-gradient(circle at bottom 344px right 427px, #ffa5ba 269px, transparent 269px);
+		// background-image: radial-gradient(circle at bottom 344px right 427px, #ffa5ba 269px, transparent 269px);
 	}
 }
 
 .hero__content {
 	position: relative;
-	// z-index: 1;
+	 z-index: 4;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -131,8 +131,8 @@
 
 // Button
 .hero__button {
-	// position: absolute;
-	// z-index: 1;
+	 position: relative;
+	 z-index: 4;
 	display: flex;
 	margin-top: 20px;
 	@media screen and (min-width: 1280px) {
@@ -154,7 +154,7 @@
 	margin-top: 66px;
 	margin-left: 120px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: none;
 	}
 	@media screen and (min-width: 1280px) {
@@ -198,18 +198,50 @@
 
 // Images
 .hero__img--icecream {
+	display: inline-block;
 	position: absolute;
-	bottom: -160px;
-	right: 32px;
-	width: auto;
-
+	width: 171px;
+	height: 410px;
+	z-index: 3;
+	top: -66%;
+	right: 15%;
+	transform: translate(0,0%);
 	@media screen and (min-width: 768px) {
-		bottom: -34px;
-		right: 213px;
+		top: -6%;
+		right: 30%;
+		width: 143px;
+		height: 336px;
 	}
 	@media screen and (min-width: 1280px) {
-		bottom: -56px;
-		right: 353px;
+		top: -7%;
+		right: 30%;
+		width: 236px;
+		height: 557px;
+	}
+
+	&:after{
+	content:'';
+	position: absolute;
+	background: #FFA5BA;
+	border-radius: 50%;
+	z-index:-1 ;
+	width: 346px;
+	height: 344px;
+	top: 0%;
+	right: -80%;
+	@media (min-width:767px) {
+	width: 324px;
+	height: 322px;
+	top: -5%;
+	right: -80%;
+	}
+	@media (min-width:1280px) {
+	width: 538px;
+	height: 538px;
+	top: -8%;
+	right: -80%;
+	}
+
 	}
 }
 
@@ -232,7 +264,7 @@
 	position: absolute;
 	right: 0;
 	bottom: -34px;
-
+	z-index: 3;
 	width: auto;
 
 	@media screen and (max-width: 767px) {
