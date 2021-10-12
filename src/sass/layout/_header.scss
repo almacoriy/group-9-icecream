@@ -3,11 +3,12 @@
   background-color: #ffb8ca;
 }
 .main-nav,
-.header-btn {
+.header__btn {
   display: none;
+
 }
 @media screen and (min-width: 768px) {
-  .header-btn {
+  .header__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,7 @@
     padding-top: 37px;
   }
 
-  .header-btn {
+  .header__btn {
     margin-left: 30px;
     margin-right: 15px;
   }
