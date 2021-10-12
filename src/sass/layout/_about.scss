@@ -148,8 +148,10 @@
   color: var(--main-accent-color);
 }
 
-.modal-about > .header__btn--close {
+.modal-about{
+  .header__btn--close {
   background-color: transparent;
+}
 }
 
 .close-icon:hover {
