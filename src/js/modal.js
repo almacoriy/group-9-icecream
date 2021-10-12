@@ -3,12 +3,14 @@
    const bodyClose = document.querySelector('body');
   const refs = {
     openModalBtn: document.querySelector('[data-modal-hero-open]'),
+    openModalBtnTwo: document.querySelector('[data-modal-hero-open-1]'),
     closeModalBtn: document.querySelector('[data-modal-hero-close]'),
     modal: document.querySelector('[data-modal-hero]'),
     
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnTwo.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
