@@ -172,7 +172,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     width: 6px;
     height: 6px;
     display: block;
@@ -229,29 +229,39 @@
 .discripion-window {
   width: 200px;
   height: auto;
-  border-radius: 4px;
-  background-color: #566459;
+  border-radius: 24px;
   padding: 10px;
   position: absolute;
 
   box-shadow: 0px 7px 29px 3px rgba(34, 60, 80, 0.33);
+
+  &.ice-cream {
+    background-color: #ffb6c1;
+  }
+  &.ice-coffee {
+    background-color: #f0d1a5;
+  }
+  &.milk-shakes {
+    background-color: #c2e297;
+  }
+
   @media screen and (min-width: 320px) {
     width: 220px;
-    height: 250px;
+    height: 300px;
 
     bottom: 36px;
     transform: translateX(-4%);
   }
   @media screen and (min-width: 768px) {
     width: 190px;
-    height: 320px;
+    height: 360px;
 
     bottom: 36px;
     transform: translateX(-3%);
   }
   @media screen and (min-width: 1280px) {
     width: 248px;
-    height: 320px;
+    height: 370px;
 
     bottom: 36px;
     transform: translateX(-12%);
@@ -286,13 +296,13 @@
   position: absolute;
 
   @media screen and (min-width: 320px) {
-    bottom: 15px;
-    left: 91px;
+    bottom: 9px;
+    left: 94px;
   }
 
   @media screen and (min-width: 768px) {
-    bottom: 15px;
-    left: 79px;
+    bottom: 9px;
+    left: 81px;
   }
   @media screen and (min-width: 1280px) {
     bottom: 15px;
