@@ -1,5 +1,6 @@
 /* HERO */
 .hero {
+  overflow: hidden;
   background-color: var(--main-background-color);
   padding-top: 110px;
   padding-bottom: 160px;
@@ -7,12 +8,14 @@
   // background-image: radial-gradient(circle at bottom 247px right 110px, #ffa5ba 172px, transparent 172px);
 
   @media screen and (min-width: 768px) {
+    overflow: visible;
     padding-top: 4px;
     padding-bottom: 34px;
     // background-image: radial-gradient(circle closest-side at top 50% right 40%, #ffa5ba 90%, transparent 50%);
     // background-image: radial-gradient(circle at bottom 207px right 264px, #ffa5ba 161px, transparent 161px);
   }
   @media screen and (min-width: 1280px) {
+    overflow: visible;
     padding-bottom: 56px;
     padding-top: 70px;
     // background-image: radial-gradient(circle closest-side at top 50% right 44%, #ffa5ba 88%, transparent 50%);
