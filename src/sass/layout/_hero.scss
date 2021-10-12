@@ -188,18 +188,18 @@
   border-radius: 50%;
   cursor: pointer;
   border: none;
-  background-image: url(../images/hero-header/desktop/hero-header-arrow-desktop-1x.png);
+  background-image: url(../images/full-arrow-2x.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: contain;
 
   @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
     margin-top: 20px;
-    background-image: url(../images/hero-header/desktop/hero-header-arrow-desktop-1x.png);
+    background-image: url(../images/full-arrow-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero-header/desktop/hero-header-arrow-desktop-2x.png);
+      background-image: url(../images/full-arrow-2x.png);
     }
   }
 }

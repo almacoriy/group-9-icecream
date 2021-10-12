@@ -215,11 +215,11 @@
   margin: 0 auto;
   border: none;
   border-radius: 50%;
-  background-image: url(../images/products/products-arrow-1x.png);
+  background-image: url(../images/full-arrow-1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/products/products-arrow-2x.png);
+    background-image: url(../images/full-arrow-2x.png);
   }
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
