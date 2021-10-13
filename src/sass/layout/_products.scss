@@ -16,9 +16,13 @@
 }
 .products__item {
   width: 280px;
-  margin-bottom: 170px;
   margin-right: 0;
+  margin-bottom: 140px;
+  &:last-child{
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
     width: 220px;
     margin-right: 20px;
   }
@@ -36,32 +40,59 @@
   background-color: var(--main-background-color);
   border-radius: 24px;
   position: relative;
-}
-
-.ice-cream-one {
+  &:before{
+  content:'';
+ @media screen and (min-resolution: 2dppx) {
+    background:url('../images/products/desktop/products-ice1-desktop-2x.png') center/contain no-repeat;
+  }
+  background:url('../images/products/desktop/products-ice1-desktop-1x.png')center/contain no-repeat;
   position: absolute;
-  width: 100%;
-  top: -65%;
-  left: 0;
-  transform: translate(0%, 65%);
+  width: 249px;
+  height: 252px;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
   @media (min-width: 768px) {
-    width: 100%;
+    width: 220px;
+    height: 226px;
     top: -35%;
     left: 0;
     transform: translate(0%, 35%);
   }
   @media (min-width: 1280px) {
-    width: 100%;
+    width: 335px;
+    height: 335px;
     top: -65%;
     left: 0%;
     transform: translate(0%, 65%);
   }
+  }
 }
+
+// .ice-cream-one {
+//   position: absolute;
+//   width: 100%;
+//   top: -65%;
+//   left: 0;
+//   transform: translate(0%, 65%);
+//   @media (min-width: 768px) {
+//     width: 100%;
+//     top: -35%;
+//     left: 0;
+//     transform: translate(0%, 35%);
+//   }
+//   @media (min-width: 1280px) {
+//     width: 100%;
+//     top: -65%;
+//     left: 0%;
+//     transform: translate(0%, 65%);
+//   }
+// }
 .content {
-  padding: 150px 40px 40px 40px;
+  padding: 140px 40px 40px 40px;
 
   @media (min-width: 768px) {
-    padding: 150px 20px 40px 20px;
+    padding: 120px 20px 40px 20px;
   }
   @media (min-width: 1280px) {
     padding: 160px 75px 50px 75px;
@@ -71,12 +102,67 @@
   background-color: #f0d1a5;
   border-radius: 24px;
   position: relative;
+   &:before{
+  content:'';
+  @media screen and (min-resolution: 2dppx) {
+    background:url('../images/products/desktop/products-ice2-desktop-2x.png') center/contain no-repeat;
+  }
+  background:url('../images/products/desktop/products-ice2-desktop-1x.png')center/contain no-repeat;
+  position: absolute;
+  width: 249px;
+  height: 252px;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  @media (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    top: -35%;
+    left: 0;
+    transform: translate(0%, 35%);
+  }
+  @media (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -65%;
+    left: 0%;
+    transform: translate(0%, 65%);
+  }
+
+  }
 }
 
 .item-elements-three {
   background-color: #c2e297;
   border-radius: 24px;
   position: relative;
+   &:before{
+  content:'';
+  @media screen and (min-resolution: 2dppx) {
+    background:url('../images/products/desktop/products-ice3-desktop-2x.png') center/contain no-repeat;
+  }
+  background:url('../images/products/desktop/products-ice3-desktop-1x.png')center/contain no-repeat;
+  position: absolute;
+  width: 249px;
+  height: 252px;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  @media (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    top: -35%;
+    left: 0;
+    transform: translate(0%, 35%);
+  }
+  @media (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -65%;
+    left: 0%;
+    transform: translate(0%, 65%);
+  }
+  }
 }
 
 .title-section-products {
