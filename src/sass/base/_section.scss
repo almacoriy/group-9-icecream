@@ -6,4 +6,7 @@ body{
   &.overflowed{
         overflow: hidden;
     }
+    &.lock{
+      overflow: hidden;
+    }
 }
