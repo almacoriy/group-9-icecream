@@ -1,0 +1,103 @@
+<section id="contact" class="contacts-section section">
+  <div class="container">
+    <h2 class="visually-hidden">Contacts</h2>
+    <ul class="contacts-list list">
+      <li class="contacts-list__item">
+        <p class="contacts-list__category">CAFE</p>
+        <p class="contacts-list__city">Chicago</p>
+        <p class="contacts-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <ul class="contacts-shedule list">
+          <li class="contacts-shedule__item">
+            <p class="contacts-shedule__days">Monday - Friday</p>
+            <p class="contacts-shedule__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="contacts-shedule__item">
+            <p class="contacts-shedule__days">Saturday - Sunday</p>
+            <p class="contacts-shedule__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contacts-address list">
+          <li class="contacts-address__tel">
+            <a href="tel:+610383766284" class="contacts__link link">+61(0) 383 766 284</a>
+          </li>
+          <li class="contacts-address__mail">
+            <a href="mailto:noreply@envato.com" class="contacts__link link">noreply@envato.com</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts-list__item">
+        <p class="contacts-list__category contacts-list__category--green">FOOD TRUCK</p>
+        <p class="contacts-list__city">Los Angeles</p>
+        <p class="contacts-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <ul class="contacts-shedule list">
+          <li class="contacts-shedule__item">
+            <p class="contacts-shedule__days">Monday - Friday</p>
+            <p class="contacts-shedule__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="contacts-shedule__item">
+            <p class="contacts-shedule__days">Saturday - Sunday</p>
+            <p class="contacts-shedule__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contacts-address list">
+          <li class="contacts-address__tel">
+            <a href="tel:+610383766284" class="contacts__link link">+61(0) 383 766 284</a>
+          </li>
+          <li class="contacts-address__mail">
+            <a href="mailto:noreply@envato.com" class="contacts__link link">noreply@envato.com</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts-list__item">
+        <p class="contacts-list__category">CAFE</p>
+        <p class="contacts-list__city">New York</p>
+        <p class="contacts-list__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <ul class="contacts-shedule list">
+          <li class="contacts-shedule__item">
+            <p class="contacts-shedule__days">Monday - Friday</p>
+            <p class="contacts-shedule__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="contacts-shedule__item">
+            <p class="contacts-shedule__days">Saturday - Sunday</p>
+            <p class="contacts-shedule__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contacts-address list">
+          <li class="contacts-address__tel">
+            <a href="tel:+610383766284" class="contacts__link link">+61(0) 383 766 284</a>
+          </li>
+          <li class="contacts-address__mail">
+            <a href="mailto:noreply@envato.com" class="contacts__link link">noreply@envato.com</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="contacts-button">
+      <button type="button" class="contacts__btn--red btn" data-modal-map-open>
+        Our Locations
+        <svg width="8" height="12">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <button type="button" class="contacts__btn--white btn" data-modal-map-open>
+        Franchise
+        <svg width="8" height="12">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop-map is-hidden" data-modal-map>
+  <div class="modal-map">
+    <button type="button" class="button-open" data-modal-map-close>X</button>
+    <form class="form-info">
+      <p class="info">Our locations</p>
+    </form>
+    <div class="contacts-content__map" id="map"></div>
+  </div>
+</div>

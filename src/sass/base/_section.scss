@@ -1,0 +1,12 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+body{
+  &.overflowed{
+        overflow: hidden;
+    }
+    &.lock{
+      overflow: hidden;
+    }
+}

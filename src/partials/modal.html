@@ -1,0 +1,50 @@
+<div data-modal-hero class="backdrop-hero is-hidden">
+  <div class="backdrop-hero__modal-hero">
+    <div class="modal-hero">
+      <button data-modal-hero-close class="backdrop-hero__close">
+        <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 1.108L9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108z"
+          />
+        </svg>
+      </button>
+      <p class="modal-hero__title">Leave your details, we will call you back</p>
+      <form class="modal-hero__form" autocomplete="off">
+        <ul class="modal-hero__list">
+          <li class="modal-hero__item">
+            <label class="modal-hero__lable" for="name">Name</label>
+            <input class="modal-hero__input" type="text" name="name" id="name" placeholder=" " />
+          </li>
+          <li class="modal-hero__item">
+            <label class="modal-hero__lable" for="phone">Phone</label>
+            <input class="modal-hero__input" type="tel" name="phone" id="phone" placeholder="" />
+          </li>
+          <li class="modal-hero__item">
+            <label class="modal-hero__lable" for="mail">Mail</label>
+            <input class="modal-hero__input" type="email" name="mail" id="mail" placeholder=" " />
+          </li>
+        </ul>
+        <div class="modal-hero__comment comment">
+          <label class="comment-hero__label" for="comment">Comments</label>
+          <textarea
+            class="comment__input"
+            name="comment"
+            id="comment"
+            placeholder=" Enter your comments"
+          ></textarea>
+        </div>
+        <label class="modal-hero__agreement">
+          <input class="modal-hero__checkbox" type="checkbox" name="policy" />
+          <span class="checkbox__icon"></span>
+          <span class="modal-hero__text"
+            >I agree with the newsletter and accept the
+            <a class="modal-hero__link" href="#"> terms and conditions</a></span
+          >
+        </label>
+        <div class="modal-hero__send">
+          <button class="modal-hero__button" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

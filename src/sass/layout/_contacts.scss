@@ -1,0 +1,329 @@
+/* CONTACTS */
+.contacts-section {
+  background-image: linear-gradient(to bottom, #fff 184px, #fff5f6 184px);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #fff 178px, #fff5f6 178px);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/contacts/contacts-bg-desktop-1x.png),
+      linear-gradient(to bottom, #fff 202px, #fff5f6 202px);
+    background-repeat: no-repeat;
+    background-position: 0px 202px, 0px 0px;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/contacts-bg-desktop-2x.png),
+        linear-gradient(to bottom, #fff 202px, #fff5f6 202px);
+    }
+  }
+}
+
+.contacts-list {
+  margin-bottom: 54px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 81px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 86px;
+    padding-left: 0;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: -30px;
+  }
+}
+
+.contacts-list__item {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--main-text-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 220px;
+  padding: 43px 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    padding: 50px 31px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+    margin-right: 0;
+    padding: 51px 44px 62px 43px;
+    width: 330px;
+  }
+}
+
+.contacts-list__category {
+  display: inline-block;
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  font-family: var(--main-font-family);
+  @include font(500, 12, 22);
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    @include font(500, 16, 30);
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts-list__category--green {
+  background: #c2e297;
+}
+
+.contacts-list__city {
+  margin-bottom: 10px;
+  font-family: var(--main-font-family);
+  @include font(500, 12, 22);
+  color: #000000;
+  @media screen and (min-width: 768px) {
+    @include font(500, 14, 26);
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16, 30);
+    margin-bottom: 10px;
+  }
+}
+
+.contacts-list__text {
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  font-family: var(--main-font-family);
+  @include font(500, 12, 18);
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+  &::after {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    content: '';
+    display: block;
+    background-color: #e1e1e1;
+    height: 1px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      bottom: -30px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: -32px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    @include font(500, 14, 23);
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16, 29);
+    margin-bottom: 64px;
+  }
+}
+
+.contacts-shedule {
+  position: relative;
+  margin-bottom: 50px;
+  &::after {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    content: '';
+    display: block;
+    background-color: #e1e1e1;
+    height: 1px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      bottom: -30px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: -32px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 64px;
+  }
+}
+
+.contacts-shedule__days,
+.contacts-shedule__time {
+  font-family: var(--main-font-family);
+  @include font(500, 12, 22);
+  color: #000000;
+  @media screen and (min-width: 768px) {
+    @include font(500, 14, 26);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16, 30);
+  }
+}
+
+.contacts-shedule__time {
+  color: #ffa5ba;
+}
+
+.contacts-shedule__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__link {
+  font-family: var(--main-font-family);
+  @include font(500, 12, 18);
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 768px) {
+    @include font(500, 14, 26);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16, 29);
+  }
+}
+
+.contacts-button {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts__btn--red {
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.contacts__btn--white {
+  background-color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+.contacts-content__map {
+  display: flex;
+  height: 80%;
+  width: 80%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  z-index: 4;
+  position: absolute !important;
+}
+.contacts-address {
+  margin-bottom: 0;
+}
+
+// MODAL
+
+.backdrop-map {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  transition: opacity 250ms, visibility 250ms;
+  z-index: 2;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+  min-height: 300px;
+  background-color: #ffb8ca;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  @media screen and (min-width: 480px) {
+    min-width: 470px;
+    min-height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 700px;
+    min-height: 500px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1000px;
+    min-height: 700px;
+  }
+}
+
+.info {
+  margin-top: 20px;
+  text-align: center;
+  font-family: var(--accent-font-family);
+  @include font(500, 20, 25);
+  color: var(--main-accent-color);
+  @media screen and (min-width: 480px) {
+    @include font(500, 30, 35);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(500, 45, 50);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(500, 58, 66);
+  }
+}
+
+.button-open {
+  font-family: var(--accent-font-family);
+  @include font(500, 10, 12);
+  color: var(--main-accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid var(--main-accent-color);
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #c2e297;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 480px) {
+    width: 25px;
+    height: 25px;
+    @include font(500, 15, 18);
+  }
+  @media screen and (min-width: 768px) {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--main-accent-color);
+    @include font(500, 17, 20);
+  }
+}

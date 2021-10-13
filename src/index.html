@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Ice Cream</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -11,8 +11,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- HERO-HEADER -->
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <!-- HERO -->
+      <include src="./partials/hero.html"></include>
+
+      <!-- PRODUCTS -->
+      <include src="./partials/products.html"></include>
+
+      <!-- ABOUT -->
+      <include src="./partials/about.html"></include>
+
+      <!-- ADVENTAGES -->
+      <include src="./partials/advantages.html"></include>
+
+      <!-- GALLERY -->
+      <include src="./partials/gallery.html"></include>
+
+      <!-- CUSTOMER-REVIEWS -->
+      <include src="./partials/customer-reviews.html"></include>
+
+      <!-- CONTACTS -->
+      <include src="./partials/contacts.html"></include>
+
+      <!-- Modal-hero -->
+      <include src="./partials/modal.html"></include>
+    </main>
+
+    <!-- FOOTER -->
+    <include src="./partials/footer.html"></include>
+
+    <!-- Подключаем файл скриптов -->
     <script src="./index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/forms.js"></script>
+
+    <!-- МОБИЛЬНОЕ МЕНЮ -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/bodyScrollLock.min.js"></script>
+
+    <!-- ГАЛЕРЕЯ -->
+    <script src="./js/masonry.pkgd.js"></script>
+
+    <!-- КАРТА -->
+    <script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="></script>
+    <script src="./js/map.js"></script>
+
+    <!-- СЛАЙДЕР -->
+    <script src="./js/slider.js"></script>
   </body>
 </html>

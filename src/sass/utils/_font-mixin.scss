@@ -1,0 +1,32 @@
+// Usage:   @include font(700, 12, 18, 0.03);
+// Output:  p {
+//              font-weight: 700;
+//              font-size: 12px;
+//              line-height: 1.5;
+//              letter-spacing: 0.03em;
+//
+//          }
+
+@mixin font($font-weight: normal, $font-size, $line-height: normal, $letter-spacing: 0.04) {
+  font-size: $font-size * 1px;
+
+  @if $line-height == normal {
+    line-height: normal;
+  } @else if $line-height % 1 == 0 and $line-height >= $font-size {
+    line-height: $line-height / $font-size;
+  } @else {
+    line-height: $line-height;
+  }
+
+  @if $letter-spacing == normal {
+    letter-spacing: normal;
+  } @else {
+    letter-spacing: #{$letter-spacing}em;
+  }
+
+  @if $font-weight==normal {
+    font-weight: normal;
+  } @else {
+    font-weight: $font-weight;
+  }
+}
