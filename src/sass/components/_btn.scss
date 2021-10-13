@@ -121,6 +121,13 @@
     stroke: var(--main-accent-color);
   }
 
+  &--close {
+    position: absolute;
+    right: 28px;
+    top: 50px;
+    background-color: transparent;
+  }
+
   &:hover,
   &:focus {
     background-color: var(--btn-hover-color-second);

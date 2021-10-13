@@ -139,6 +139,10 @@
     padding-bottom: 40px;
     background-color: rgba(255, 182, 193, 0.9);
   }
+
+  & > .label {
+    color: #ffffff;
+  }
 }
 
 .modal-about__text {
@@ -149,10 +153,10 @@
   color: var(--main-accent-color);
 }
 
-.modal-about{
+.modal-about {
   .header__btn--close {
-  background-color: transparent;
-}
+    background-color: transparent;
+  }
 }
 
 .close-icon:hover {
