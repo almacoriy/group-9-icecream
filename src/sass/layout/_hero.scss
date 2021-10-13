@@ -137,6 +137,12 @@
   }
 }
 
+.btn.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero__btn--red {
   margin-right: 8px;
 }
