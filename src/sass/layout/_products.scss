@@ -69,25 +69,7 @@
   }
 }
 
-// .ice-cream-one {
-//   position: absolute;
-//   width: 100%;
-//   top: -65%;
-//   left: 0;
-//   transform: translate(0%, 65%);
-//   @media (min-width: 768px) {
-//     width: 100%;
-//     top: -35%;
-//     left: 0;
-//     transform: translate(0%, 35%);
-//   }
-//   @media (min-width: 1280px) {
-//     width: 100%;
-//     top: -65%;
-//     left: 0%;
-//     transform: translate(0%, 65%);
-//   }
-// }
+
 .content {
   padding: 140px 40px 40px 40px;
 
@@ -219,24 +201,34 @@
   font-family: var(--accent-font-family);
   font-style: normal;
   font-weight: normal;
-  display: block;
-  margin-bottom: 70px;
+  display: flex;
+    flex-direction: column;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: calc(23 / 20);
   letter-spacing: 0.04em;
   text-align: center;
+  &:after{
+  content:'';
+  background:url('../images/products/desktop/products-dots-1x.png') center no-repeat ;
+  padding: 3px 13px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 768px) {
-    display: block;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: calc(23 / 20);
     letter-spacing: 0.04em;
   }
 
   @media screen and (min-width: 1280px) {
-    display: block;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
     font-size: 30px;
     line-height: calc(34 / 30);
 
